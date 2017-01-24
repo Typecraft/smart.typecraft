@@ -70,8 +70,14 @@
   }
 }
 
+.section__documentation{
+  background-color: lighten($color-secondary-2-1, 20%);
+  color: $color-secondary-1-4;
+}
+
 .section__footer{
   background-color: $color-black-3;
+  color: $color-gray-1;
 }
 
 .upper{
