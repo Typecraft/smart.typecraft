@@ -90,3 +90,8 @@ ENV/
 
 .idea
 node_modules
+
+# Static folders
+web/static/css
+web/static/js
+web/static/lib
