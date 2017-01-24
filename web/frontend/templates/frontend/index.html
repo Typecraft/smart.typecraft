@@ -1,10 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'frontend/base.html' %}
+{% block head %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/frontpage.css') }}">
+  <script src="/static/js/frontpage.js"></script>
+{% endblock %}
+{% block content %}
+  <div class="content">
+    <div class="section__top">
+      <div class="container">
+        <div class="row">
+          <h2>Typecraft - <span class="thin upper">smart tools</span></h2>
+        </div>
+      </div>
+    </div>
+    <section class="section__info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="light">Automated linguistic heavy-lifting</h3>
+            <p>The <span class="upper thin">Typecraft smart tools</span> is a set of online web services performing tagging and classification tasks.</p>
+            <p>The web services can be accessed both manually on this web page, on the <a href="https://typecraft.org/app">Typecraft web app</a>, or through the <a href="https://docs.typecraft.org/smart">API.</a></p>
+          </div>
+          <div class="col-md-6">
+            <h3 class="light">Latest and fastest</h3>
+            <p>Worry about speed? Worry no more. We use the best tools of the trade.</p>
+            <p>With more than 15 different POS-taggers, 10 different morphological taggers and more; the <span class="upper thing">smart tools</span> offer you the best of the best.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section__numbers">
+      
+    </div>
+  </div>
+{% endblock %}
+
