@@ -1,0 +1,22 @@
+{
+  "name": "smart_typecraft",
+  "homepage": "https://github.com/Typecraft/smart_typecraft",
+  "authors": [
+    "Tormod Haugland <tormod.haugland@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/static/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "parallax.js": "^1.4.2"
+  }
+}
