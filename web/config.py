@@ -13,5 +13,7 @@ class DefaultConfig(object):
     UPLOAD_FOLDER = '/tmp'
     ALLOWED_EXTENSIONS = {'txt', 'xml', 'json', 'antx', 'graf', 'tgf', 'yml', 'yaml'}
 
+
 class DebugConfig(object):
     DEBUG = True
+    TEMPLATES_AUTO_RELOAD = True
