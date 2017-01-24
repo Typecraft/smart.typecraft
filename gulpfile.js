@@ -2,8 +2,10 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var clean = require('gulp-clean-css');
 
+const scssFolders = 'public/scss/**/*.scss';
+
 gulp.task('sass', () => {
-  return gulp.src('public/scss/**/*.scss')
+  return gulp.src(scssFolders)
     .pipe(sass()).on('error', sass.logError)
     .pipe(gulp.dest('web/static/css'));
 });
