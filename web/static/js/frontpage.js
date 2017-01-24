@@ -8,6 +8,10 @@ $(document).ready(function() {
     imageSrc: "/static/img/pexels-photo-94654.jpeg"
   });
 
+  $(".section__pricing").parallax({
+    imageSrc: "/static/img/pexels-photo-241544.jpeg"
+  })
+
   $("[data-countup]").countup({
     startVal: parseInt($(this).data("start") || 0, 10),
     endVal: parseInt($(this).data("end") || 0, 10)
@@ -18,7 +22,7 @@ $(document).ready(function() {
     $(window).scrollTo($($(this).attr('href')), 1000);
   });
 
-  const $isoElems = $(".grid").isotope({
+  let $isoElems = $(".grid").isotope({
     itemSelector: '.grid-item',
     layoutMode: "fitRows"
   });

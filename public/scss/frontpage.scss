@@ -44,6 +44,36 @@
   }
 }
 
+.section__pricing{
+  background-color: transparentize($color-primary-4, 0.2);
+  color: $color-primary-1;
+
+  .pricingcard{
+    background-color: lighten($color-primary-1, 10%);
+    color: $color-primary-0;
+    padding: 1em;
+    border-radius: 5px;
+  }
+
+  .pricing__button{
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    background-color: $color-primary-3;
+    color: $color-primary-1;
+    cursor: pointer;
+    border-radius: 2px;
+
+    &:hover{
+      color: white;
+    }
+  }
+}
+
+.section__footer{
+  background-color: $color-black-3;
+}
+
 .upper{
   text-transform: uppercase;
 }
