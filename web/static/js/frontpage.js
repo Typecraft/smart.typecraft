@@ -9,12 +9,37 @@ $(document).ready(function() {
   });
 
   $("[data-countup]").countup({
-    startVal: 10,  // parseInt($(this).data("start"), 10),
-    endVal: 1000  // parseInt($(this).data("end"), 10)
+    startVal: parseInt($(this).data("start") || 0, 10),
+    endVal: parseInt($(this).data("end") || 0, 10)
   });
 
   $("a.scrollto").click(function(event) {
     event.preventDefault();
     $(window).scrollTo($($(this).attr('href')), 1000);
   });
+
+  const $isoElems = $(".grid").isotope({
+    itemSelector: '.grid-item',
+    layoutMode: "fitRows"
+  });
+
+  $(".tools__all").click(function() {
+    $isoElems.isotope({filter: '*'});
+  });
+  $(".tools__pos").click(function() {
+    $isoElems.isotope({filter: '.pos'});
+  });
+  $(".tools__gloss").click(function() {
+    $isoElems.isotope({filter: '.gloss'});
+  });
+  $(".tools__lemma").click(function() {
+    $isoElems.isotope({filter: '.lemma'});
+  });
+  $(".tools__chunker").click(function() {
+    $isoElems.isotope({filter: '.chunker'});
+  });
+  $(".tools__multilingual").click(function() {
+    $isoElems.isotope({filter: '.multilingual'});
+  });
 });
+
