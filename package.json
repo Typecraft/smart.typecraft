@@ -1,0 +1,23 @@
+{
+  "name": "smart_typecraft",
+  "version": "0.0.1",
+  "description": "Smart typecraft web services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Typecraft/smart_typecraft.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Typecraft/smart_typecraft/issues"
+  },
+  "homepage": "https://github.com/Typecraft/smart_typecraft#readme",
+  "devDependencies": {
+    "eslint": "^3.14.0",
+    "eslint-config-google": "^0.7.1"
+  }
+}
